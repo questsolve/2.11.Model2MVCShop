@@ -158,6 +158,59 @@
 			  		</div>
 			  	
 			  	</div>
+			  	<div class="container">
+		<div class="col-md-9"  style="padding:0">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		      <!-- Indicators -->
+		      <ol class="carousel-indicators">
+		        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		        <li data-target="#myCarousel" data-slide-to="1"></li>
+		        <li data-target="#myCarousel" data-slide-to="2"></li>
+		      </ol>
+		      <div class="carousel-inner" role="listbox">
+		        <div class="item active">
+		          <img class="first-slide" src="../images/uploadFiles/AHlbAAAAtBqyWAAA.jpg" alt="First slide" width="300" height="200">
+		          <div class="container">
+		            <div class="carousel-caption">
+		              <h1 align="right">Example headline.</h1>
+		               
+		              <p align="right"><a class="btn btn-lg btn-primary" href="#" role="button">구매하러 가기</a></p>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="item">	
+		          <img class="second-slide" src="../images/uploadFiles/AHlbAAAAtDPSiQAA.jpg" alt="Second slide" width="300" height="200">
+		          <div class="container">
+		            <div class="carousel-caption">
+		              <h1 align="right">Another example headline.</h1>
+		              <p align="right"><a class="btn btn-lg btn-primary" href="#" role="button">구매하러 가기</a></p>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="item">
+		          <img class="third-slide" src="../images/uploadFiles/AHlbAAAAvWs@GwAA.jpg" alt="Third slide" width="300" height="200">
+		          <div class="container">
+		            <div class="carousel-caption">
+		              <h1 align="right">One more for good measure.</h1>
+		              <p align="right"><a class="btn btn-lg btn-primary" href="#" role="button">구매하러 가기</a></p>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		        <span class="sr-only">Previous</span>
+		      </a>
+		      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		        <span class="sr-only">Next</span>
+		      </a>
+		    </div>
+		
+		</div>
+	</div>
+<!-- Container end -->	
+			  	
 	        </div>
 	   	 	<!--  Main end /////////////////////////////////////-->   		
 	 	 	
@@ -166,7 +219,8 @@
 		
 	</div>
 	<!--  화면구성 div end /////////////////////////////////////-->
-
+		
+	
 </body>
 
 </html>
