@@ -126,8 +126,6 @@ $(function(){
 		<td colspan="11" >전체 ${resultPage.totalCount} 건수, 현재 ${resultPage.currentPage} 페이지</td>
 	</tr>
 	
-	
-	
 	<tr>
 		<td class="ct_list_b" width="100"><a href="../product/listProduct?menu=${menu}&ordering=${productSearch.ordering}">No</a></td>
 		<td class="ct_line02"></td>

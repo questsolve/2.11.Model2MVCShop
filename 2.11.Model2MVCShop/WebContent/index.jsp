@@ -76,8 +76,10 @@
 			
 			<div class="collapse navbar-collapse"  id="target">
 	             <ul class="nav navbar-nav navbar-right">
+	                 <li><a href="#">상품검색</a></li>
 	                 <li><a href="#">회원가입</a></li>
 	                 <li><a href="#">로 그 인</a></li>
+	                 
 	           	</ul>
 	       </div>
    		
@@ -91,61 +93,9 @@
 		<!-- 다단레이아웃  Start /////////////////////////////////////-->
 		<div class="row">
 	
-			<!--  Menu 구성 Start /////////////////////////////////////-->     	
-			<div class="col-md-3">
-		        
-		       	<!--  회원관리 목록에 제목 -->
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<i class="glyphicon glyphicon-heart"></i> 회원관리
-         			</div>
-         			<!--  회원관리 아이템 -->
-					<ul class="list-group">
-						 <li class="list-group-item">
-						 	<a href="#">개인정보조회</a> <i class="glyphicon glyphicon-ban-circle"></i>
-						 </li>
-						 <li class="list-group-item">
-						 	<a href="#">회원정보조회</a> <i class="glyphicon glyphicon-ban-circle"></i>
-						 </li>
-					</ul>
-		        </div>
-               
-               
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-							<i class="glyphicon glyphicon-briefcase"></i> 판매상품관리
-         			</div>
-					<ul class="list-group">
-						 <li class="list-group-item">
-						 	<a href="#">판매상품등록</a> <i class="glyphicon glyphicon-ban-circle"></i>
-						 </li>
-						 <li class="list-group-item">
-						 	<a href="#">판매상품관리</a> <i class="glyphicon glyphicon-ban-circle"></i>
-						 </li>
-					</ul>
-		        </div>
-               
-               
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-							<i class="glyphicon glyphicon-shopping-cart"></i> 상품구매
-	    			</div>
-					<ul class="list-group">
-						 <li class="list-group-item"><a href="#">상품검색</a></li>
-						  <li class="list-group-item">
-						  	<a href="#">구매이력조회</a> <i class="glyphicon glyphicon-ban-circle"></i>
-						  </li>
-						 <li class="list-group-item">
-						 	<a href="#">최근본상품</a> <i class="glyphicon glyphicon-ban-circle"></i>
-						 </li>
-					</ul>
-				</div>
-				
-			</div>
-			<!--  Menu 구성 end /////////////////////////////////////-->   
-
+			
 	 	 	<!--  Main start /////////////////////////////////////-->   		
-	 	 	<div class="col-md-9">
+	 	 	<div class="col-md-12">
 				<div class="jumbotron">
 			  		<h1>Model2 MVC Shop</h1>
 			  		<p>로그인 후 사용가능...</p>
@@ -153,13 +103,13 @@
 			  		<p>회원가입 하세요.</p>
 			  		
 			  		<div class="text-center">
-			  			<a class="btn btn-info btn-lg" href="#" role="button">회원가입</a>
-			  			<a class="btn btn-info btn-lg" href="#" role="button">로 그 인</a>
+			  			<a class="btn btn-warning btn-lg" href="#" role="button">회원가입</a>
+			  			<a class="btn btn-success btn-lg" href="#" role="button">로 그 인</a>
 			  		</div>
 			  	
 			  	</div>
 			  	<div class="container">
-		<div class="col-md-9"  style="padding:0">
+		<div class="col-md-12"  style="padding:0">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		      <!-- Indicators -->
 		      <ol class="carousel-indicators">

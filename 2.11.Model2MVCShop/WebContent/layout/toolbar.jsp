@@ -83,7 +83,7 @@
 	                     </ul>
 	                 </li>
 	                 
-	                 <li><a href="#">etc...</a></li>
+	                 <li><a href="#">직원업무</a></li>
 	             </ul>
 	             
 	             <ul class="nav navbar-nav navbar-right">
