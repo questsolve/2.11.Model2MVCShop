@@ -134,6 +134,9 @@ public class ProductController {
 		
 		Page resultPage = new Page( search.getCurrentPage(), ((Integer)map.get("totalCount")).intValue(), pageUnit, pageSize);
 		System.out.println(resultPage);
+		System.out.println(menu);
+		
+		System.out.println(map.get("productList"));
 		
 		productMap.put("productMapList", map.get("productList"));
 		productMap.put("resultPage", resultPage);

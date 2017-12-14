@@ -11,6 +11,13 @@
 
 <link rel="stylesheet" href="/css/admin.css" type="text/css">
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script src="/javascript/bootstrap-dropdownhover.min.js"></script>
+<link href="/css/animate.min.css" rel="stylesheet">
+<link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+
 <script type="text/javascript">
 
 function fncGetUserList(currentPage){
@@ -30,7 +37,8 @@ $(function(){
 	$(".ct_list_pop td:nth-child(3)").on("click",function(){
 		//self.location ="../product/getProduct?prodNo="+$($("input[name=prodNo]")[$(".ct_list_pop td:nth-child(3)").index(this)]).val()+"&menu=${menu}";
 		var prodNo =$($("input[name=prodNo]")[$(".ct_list_pop td:nth-child(3)").index(this)]).val();
-		var menu = $($("input[name=menu]")[$(".ct_list_pop td:nth-child(3)").index(this)]).val();
+		var menu = "${menu}";
+		
 		$.ajax({
 			url:"../product/json/getProduct/"+prodNo+"/"+menu,
 			method:"GET",
@@ -57,6 +65,7 @@ $(function(){
 	});
 	
 });
+
 </script>
 </head>
 
@@ -66,26 +75,7 @@ $(function(){
 
 <form name="detailForm">
 
-<table width="100%" height="37" border="0" cellpadding="0"	cellspacing="0">
-	<tr>
-		<td width="15" height="37">
-			<img src="/images/ct_ttl_img01.gif" width="15" height="37"/>
-		</td>
-		<td background="/images/ct_ttl_img02.gif" width="100%" style="padding-left:10px;">
-			<table width="100%" border="0" cellspacing="0" cellpadding="0">
-				<tr>
-					<td width="93%" class="ct_ttl01">
-						${workFlow}
-					</td>
-				</tr>
-			</table>
-		</td>
-		<td width="12" height="37">
-			<img src="/images/ct_ttl_img03.gif" width="12" height="37"/>
-		</td>
-	</tr>
-</table>
-
+<jsp:include page="/layout/toolbar.jsp" />
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:10px;">
 	<tr>
@@ -119,7 +109,6 @@ $(function(){
 		</td>
 	</tr>
 </table>
-
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:10px;">
 	<tr>
@@ -166,7 +155,7 @@ $(function(){
 		<!-- <a href="../product/getProduct?prodNo=${product.prodNo}&menu=${menu}">${product.prodName}</a> -->
 		${product.prodName}
 		<input type="hidden" name="prodNo" value="${product.prodNo}"/>
-		<input type="hidden" name="menu" value="${menu}"/>
+		
 		</td>
 				
 		<td></td>
@@ -200,7 +189,7 @@ $(function(){
 </form>
 
 </div>
-
+${menu}
 
 </body>
 </html>

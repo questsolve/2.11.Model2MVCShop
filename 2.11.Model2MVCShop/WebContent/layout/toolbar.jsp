@@ -82,8 +82,9 @@
 	                         <li><a href="#">etc..</a></li>
 	                     </ul>
 	                 </li>
-	                 
-	                 <li><a href="#">流盔诀公</a></li>
+	                 <c:if test="${user.role=='admin'}">
+	                 	<li><a href="#">流盔诀公</a></li>
+	                 </c:if>
 	             </ul>
 	             
 	             <ul class="nav navbar-nav navbar-right">
