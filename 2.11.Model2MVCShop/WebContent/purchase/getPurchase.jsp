@@ -9,7 +9,16 @@
 <title>구매상세조회</title>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-
+<script src="/javascript/bootstrap-dropdownhover.min.js"></script>
+<link href="/css/animate.min.css" rel="stylesheet">
+<link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+<style>
+	  body {
+            padding-top : 50px;
+        }
+</style>
 <script type="text/javascript">
 
 $(function(){
@@ -31,7 +40,7 @@ $(function(){
 </head>
 
 <body bgcolor="#ffffff" text="#000000">
-
+<jsp:include page="/layout/toolbar.jsp" />
 <table width="100%" height="37" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td width="15" height="37">
