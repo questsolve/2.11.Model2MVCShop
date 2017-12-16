@@ -83,8 +83,8 @@
 		<!--  row Start /////////////////////////////////////-->
 		<div class="row">
 		
-			<div class="col-md-6">
-					<img src="/images/logo-spring.png" class="img-rounded" width="100%" />
+			<div class="col-md-6" >
+					<img src="/images/Inchen.jpg" class="img-rounded" width="100%" />
 			</div>
 	   	 	
 	 	 	<div class="col-md-6">

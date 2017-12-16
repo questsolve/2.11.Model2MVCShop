@@ -11,6 +11,16 @@
 
 <link rel="stylesheet" href="/css/admin.css" type="text/css">
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="/javascript/bootstrap-dropdownhover.min.js"></script>
+<link href="/css/animate.min.css" rel="stylesheet">
+<link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+<style>
+	  body {
+            padding-top : 50px;
+        }
+</style>
 <script type="text/javascript">
 
 function fncGetUserList(currentPage) {
@@ -73,7 +83,7 @@ $(function(){
 </head>
 
 <body bgcolor="#ffffff" text="#000000">
-
+<jsp:include page="/layout/toolbar.jsp" />
 <div style="width: 98%; margin-left: 10px;">
 
 <form name="detailForm">

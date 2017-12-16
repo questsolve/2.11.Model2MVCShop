@@ -43,6 +43,8 @@ public class ProductServiceImpl implements ProductService {
 		
 		int totalCount = productDAO.getTotalCount(search);
 		
+		System.out.println("search");
+		
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("productList", list);
 		map.put("totalCount", new Integer(totalCount));

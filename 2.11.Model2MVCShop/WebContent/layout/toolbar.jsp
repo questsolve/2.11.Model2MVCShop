@@ -82,14 +82,22 @@
 	                         <li><a href="#">etc..</a></li>
 	                     </ul>
 	                 </li>
-	                 
-	                 <li><a href="#">직원업무</a></li>
+	                 <c:if test="${user.role=='admin'}">
+	                 	<li><a href="#">직원업무</a></li>
+	                 </c:if>
 	             </ul>
-	             
-	             <ul class="nav navbar-nav navbar-right">
-	                <li><a href="#">로그아웃</a></li>
-	            </ul>
+	            <c:if test="${!empty user}">
+		            <ul class="nav navbar-nav navbar-right">
+		                <li><a href="#">로그아웃</a></li>
+		            </ul>
+	            </c:if>
+	            <c:if test="${empty user}">
+		            <ul class="nav navbar-nav navbar-right">
+		                <li><a href="#">로그인</a></li>
+		            </ul>
+	            </c:if>
 		</div>
+		
 		<!-- dropdown hover END -->	       
 	    
 	</div>
@@ -122,6 +130,23 @@
 	 	$( "a:contains('개인정보조회')" ).on("click" , function() {
 	 		//==> DOM Object GET 3가지 방법 ==> 1. $(tagName) : 2.(#id) : 3.$(.className)
 			$(self.location).attr("href","/user/getUser?userId=${sessionScope.user.userId}");
+		});
+		
+	 	$( "a:contains('상 품 검 색')" ).on("click" , function() {
+	 		//==> DOM Object GET 3가지 방법 ==> 1. $(tagName) : 2.(#id) : 3.$(.className)
+			$(self.location).attr("href","/product/listProduct?menu=search");
+		});
+	 	
+	 	$( "a:contains('판매상품등록')" ).on("click" , function() {
+	 		$(self.location).attr("href","/product/addProduct");
+		});
+	 	
+	 	$( "a:contains('판매상품관리')" ).on("click" , function() {
+	 		$(self.location).attr("href","/product/listProduct?menu=manage");
+		});
+	 	
+	 	$( "a:contains('구매이력조회')" ).on("click" , function() {
+	 		$(self.location).attr("href","/purchase/listPurchase");
 		});
 		
 	</script>  
