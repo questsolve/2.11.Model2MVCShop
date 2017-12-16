@@ -17,7 +17,11 @@
 <link href="/css/bootstrap-dropdownhover.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
-
+<style>
+	  body {
+            padding-top : 50px;
+        }
+</style>
 <script type="text/javascript">
 
 function fncGetUserList(currentPage){
@@ -189,7 +193,7 @@ $(function(){
 </form>
 
 </div>
-${menu}
+
 
 </body>
 </html>

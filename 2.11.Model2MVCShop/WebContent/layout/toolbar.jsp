@@ -86,11 +86,18 @@
 	                 	<li><a href="#">직원업무</a></li>
 	                 </c:if>
 	             </ul>
-	             
-	             <ul class="nav navbar-nav navbar-right">
-	                <li><a href="#">로그아웃</a></li>
-	            </ul>
+	            <c:if test="${!empty user}">
+		            <ul class="nav navbar-nav navbar-right">
+		                <li><a href="#">로그아웃</a></li>
+		            </ul>
+	            </c:if>
+	            <c:if test="${empty user}">
+		            <ul class="nav navbar-nav navbar-right">
+		                <li><a href="#">로그인</a></li>
+		            </ul>
+	            </c:if>
 		</div>
+		
 		<!-- dropdown hover END -->	       
 	    
 	</div>
