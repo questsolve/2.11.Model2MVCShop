@@ -83,7 +83,7 @@
 		<!--  row Start /////////////////////////////////////-->
 		<div class="row">
 		
-			<div class="col-md-6">
+			<div class="col-md-6" >
 					<img src="/images/Inchen.jpg" class="img-rounded" width="100%" />
 			</div>
 	   	 	
